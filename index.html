@@ -162,6 +162,11 @@
       border-top: 0.5px solid rgba(60, 60, 67, 0.12);
     }
 
+    .highlight-blue {
+      color: var(--ios-blue);
+      font-weight: 600;
+    }
+
     .result-card {
       background: var(--ios-card);
       border-radius: var(--ios-radius);
@@ -229,7 +234,7 @@
     <div class="ios-section-title">Circulação (Pressão Arterial)</div>
     <div class="pa-inputs-grid">
       <div class="pa-box">
-        <label>Pré-Anestésico</label>
+        <label>Pré-Anestesia</label>
         <input type="text" inputmode="decimal" id="pas_pre" placeholder="PAS">
         <input type="text" inputmode="decimal" id="pad_pre" placeholder="PAD" style="margin-top: 6px;">
       </div>
@@ -242,7 +247,7 @@
     <div id="pa_info" class="pa-details" style="display: none;">
       • PAS: Variação de <span id="var_pas">0</span>% (<span id="pts_pas">0</span> pts)<br>
       • PAD: Variação de <span id="var_pad">0</span>% (<span id="pts_pad">0</span> pts)<br>
-      <strong>• Pontuação PA Considerada: <span id="pts_pa_final">0</span> pts</strong>
+      <strong class="highlight-blue">• Pontuação PA Considerada: <span id="pts_pa_final">0</span> pts</strong>
     </div>
   </div>
 
@@ -251,7 +256,7 @@
     <div class="ios-section-title">OUTROS CRITÉRIOS</div>
     
     <div class="ios-select-group">
-      <label for="atividade">Atividade (Motor)</label>
+      <label for="atividade">Atividade (Força Motora)</label>
       <div class="ios-select-wrapper">
         <select id="atividade">
           <option value="" disabled selected>Selecione</option>
